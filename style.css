@@ -264,3 +264,106 @@ header{
 #category_btns::-webkit-scrollbar-track{
 	background : transparent;
 }
+
+#products_container{
+	min-height: 100vh;
+	width : 100%;
+	display : grid;
+	grid-template-columns: repeat(4,1fr);
+}
+
+.card{
+	height:550px;
+	max-width : 500px;
+	border: 2px solid rgba(0,0,0,0.448);
+	display : flex;
+	flex-direction : column;
+	justify-content: space-between;
+	align-items: flex-start;
+	border-radius: 30px;
+	box-shadow: rgba(0,0,0,0.24) 0px 3px 8px;
+	margin : 20px;
+}
+
+.product_img_container{
+	flex-basis : 30%;
+	position : relative;
+}
+
+.product_img_container > img{
+	height : 100%;
+	width : 100%;
+}
+
+.discount{
+	position : absolute;
+	top : 20px;
+	left : 20px;
+	background-color: #e20e14;
+	color : white;
+	border-radius : 15px;
+	padding : 2px 7px;
+}
+
+.ratings{
+	position : absolute;
+	top : 20px;
+	right : 20px;
+	border : 2px solid #e20e14;
+	background-color: #fff;
+	border-radius: 15px;
+	padding : 3px 10px;
+}
+
+.rating>i{
+	color : #e20e14;
+}
+
+.category{
+	padding : 0px 20px;
+	font-size: 1.4rem;
+	font-weight: 600;
+}
+
+.title{
+	padding : 0px 20px;
+	font-size : 1.4rem;
+	font-weight: 600;
+}
+
+.card > aside{
+	width : 100%;
+	display : flex;
+	justify-content: space-between;
+	align-items: center;
+	padding : 10px 20px;
+}
+
+.card > aside > div > p{
+	margin : 5px 0px;
+	font-weight: 600;
+}
+
+.card > aside >div > p:nth-child(2) {
+	color : #e20e14;
+}
+
+.product_price{
+	font-size : 1.5rem;
+}
+
+.product_price > del {
+	font-size : 1 rem;
+}
+
+.product_cart{
+	height : 50px;
+	width : 50px;
+	color : white;
+	border-radius: 50%;
+	display : flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #e20e14;
+	font-size : 0.5rem;
+}
